@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.myGame {
+    height: 100vh;
+  }
+  
+
+  canvas {
+    background-color: rgb(49, 49, 49);
+    max-width: 100%;
+    /* cursor: crosshair; */
+  }
+
+  .scoreBoard {
+    position: fixed;
+    top:5%;
+    left:5%;
+    font: 600 1.2vmax "Franklin Gothic Medium";
+    color: azure;
+    display: none;
+  }
+
+  form {
+    background-color: rgba(49, 49, 49,0.158);
+    height: 60vh;
+    width: 60vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form > select,
+  form select option {
+    padding: 2vmax;
+    width: 20vw;
+    text-align: center;
+    font-size: 2vmax;
+    outline: none;
+    transition: all 0.5s;
+    border: none;
+  }
+
+
+  form > input {
+    margin: 2vmax;
+    padding: 2vmax;
+    width: 20vw;
+    cursor: pointer;
+    border: none;
+    color: white;
+    transition: all 0.5s;
+    background-color: rgb(10, 206, 85);
+    font-size: 2vmax;
+    font-family: sans-serif;
+    outline: none;
+  } 
+
+  form > select:hover {
+    box-shadow: 0 0 10px rgb(10, 206, 85);
+  }
+
+  form > input:hover {
+    box-shadow: 0 0 10px rgb(252, 6, 6);
+  }
